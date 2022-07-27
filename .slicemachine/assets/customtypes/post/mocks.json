@@ -1,19 +1,34 @@
 {
-  "id": "644b782f-63f9-48fc-a430-c4bcf6fa11f8",
-  "uid": "ducimus-possimus-magnam",
+  "id": "d788777e-5913-419b-874c-0124cab16a4a",
+  "uid": "unde-facilis-eum",
   "type": "post",
   "data": {
     "title": [
       {
         "type": "heading1",
-        "text": "Reintermediate collaborative schemas",
+        "text": "Deploy strategic applications",
         "spans": []
       }
     ],
     "content": [
       {
+        "type": "heading1",
+        "text": "Brand killer paradigms",
+        "spans": []
+      },
+      {
+        "type": "image",
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+      },
+      {
         "type": "paragraph",
-        "text": "Adipisicing pariatur ex ad pariatur cillum nulla adipisicing ut. Esse labore dolor proident commodo esse aliqua exercitation laborum incididunt non incididunt sunt magna et.",
+        "text": "Enim esse proident dolor occaecat nostrud ipsum proident pariatur nisi consectetur minim aute aute.",
         "spans": []
       }
     ]
