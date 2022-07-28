@@ -31,11 +31,8 @@ export default function Post({ post }: PostProps) {
           <time>
             {post.updatedAt}
           </time>
-
-            <div>{post.content}</div>
-
-          {/* <div className={styles.postContent}
-            dangerouslySetInnerHTML={{ __html: post.content }} /> */}
+          <div className={styles.postContent}
+            dangerouslySetInnerHTML={{ __html: post.content }} />
 
         </article>
       </main>
@@ -49,7 +46,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
   const { slug } = params
 
 
-  if(!session.activeSubscription){
+  if (!session.activeSubscription) {
     return {
       redirect: {
         destination: '/',
@@ -63,7 +60,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
   const post = {
     slug,
     title: RichText.asText(response.data.title),
-    content: RichText.asText(response.data.content),
+    content: RichText.asHtml(response.data.content),
     updatedAt: new Date(response.last_publication_date).toLocaleDateString('pt-Br', {
       day: '2-digit',
       month: 'long',
